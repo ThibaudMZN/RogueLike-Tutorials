@@ -1,12 +1,14 @@
-extends Node2D
+extends Entity
 class_name Player
 
-func _ready():
-	pass
-
-func _process(delta):
-	var d_pos = Input.get_vector("left", "right", "up", "down")		
-	position += d_pos.floor()
-
-func init_player(pos: Vector2):
-	position = pos
+func _input(event):
+	var d_pos = Vector2i.ZERO
+	if event.is_action_pressed("left"):
+		d_pos.x -= 1
+	elif event.is_action_pressed("right"):
+		d_pos.x += 1
+	elif event.is_action_pressed("up"):
+		d_pos.y -= 1
+	elif event.is_action_pressed("down"):
+		d_pos.y += 1
+	move(d_pos)

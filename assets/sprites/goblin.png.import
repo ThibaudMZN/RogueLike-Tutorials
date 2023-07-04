@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq2ep1uexnsv"
-path="res://.godot/imported/atlas.png-660585e3342555707017f1290faf6341.ctex"
+uid="uid://dmttkot3bul36"
+path="res://.godot/imported/goblin.png-1dcab3d284c086db871ca1152d1a6b5e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/atlas.png"
-dest_files=["res://.godot/imported/atlas.png-660585e3342555707017f1290faf6341.ctex"]
+source_file="res://assets/sprites/goblin.png"
+dest_files=["res://.godot/imported/goblin.png-1dcab3d284c086db871ca1152d1a6b5e.ctex"]
 
 [params]
 

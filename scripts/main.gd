@@ -1,10 +1,14 @@
 extends Node2D
 
 @onready var player: Player = $Player
+@onready var npc = $NPC
 
 func _ready():
-	var window_size = get_viewport().get_visible_rect().size
-	player.init_player(Vector2(round(window_size.x / 2), round(window_size.y / 2)))
+	var grid_size = (get_viewport().get_visible_rect().size / Constants.TILE_SIZE).floor()
+	var grid_center = (grid_size / 2).floor() as Vector2i
+	player.init(grid_center)
+	npc.init(grid_center + Vector2i(2, 0))
+	GameMap.init(grid_size)
 
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
