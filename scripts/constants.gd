@@ -5,3 +5,4 @@ extends Node
 
 @export var FLOOR_TILE: Vector2i = Vector2i(1, 1)
 @export var WALL_TILE: Vector2i = Vector2i(1, 0)
+@export var TEST_TILE: Vector2i = Vector2i(7, 2)

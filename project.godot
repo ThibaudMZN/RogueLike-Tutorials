@@ -19,11 +19,12 @@ config/icon="res://icon.svg"
 
 Constants="*res://scripts/constants.gd"
 GameMap="*res://scenes/game_map.tscn"
+RngManager="*res://scripts/rng_manager.gd"
 
 [display]
 
-window/size/viewport_width=640
-window/size/viewport_height=400
+window/size/viewport_width=1280
+window/size/viewport_height=800
 window/stretch/mode="viewport"
 window/stretch/scale=2.0
 

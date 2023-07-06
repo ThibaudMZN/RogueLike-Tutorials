@@ -5,10 +5,9 @@ extends Node2D
 
 func _ready():
 	var grid_size = (get_viewport().get_visible_rect().size / Constants.TILE_SIZE).floor()
-	var grid_center = (grid_size / 2).floor() as Vector2i
-	player.init(grid_center)
-	npc.init(grid_center + Vector2i(2, 0))
-	GameMap.init(grid_size)
+	var player_position = GameMap.init(grid_size)
+	player.init(player_position)
+	npc.init(player_position - Vector2i(2, 0))
 
 func _process(delta):
 	if Input.is_action_just_pressed("quit"):
